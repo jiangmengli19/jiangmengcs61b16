@@ -40,7 +40,7 @@ public class ScrollBarExample extends Application {
         ScrollBar scrollBar = new ScrollBar();
         scrollBar.setOrientation(Orientation.VERTICAL);
         // Set the height of the scroll bar so that it fills the whole window.
-        scrollBar.setPrefHeight(WINDOW_HEIGHT);
+        scrollBar.setPrefHeight(600);
 
         // Set the range of the scroll bar.
         scrollBar.setMin(imageStartingHeight);

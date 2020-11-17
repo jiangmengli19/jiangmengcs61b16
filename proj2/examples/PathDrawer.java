@@ -54,6 +54,7 @@ public class PathDrawer extends Application {
             double mousePressedY = mouseEvent.getY();
             EventType eventType = mouseEvent.getEventType();
             if (eventType == MouseEvent.MOUSE_PRESSED) {
+                System.out.println("PRESSED");
                 lastPositionX = mousePressedX;
                 lastPositionY = mousePressedY;
             } else if (eventType == MouseEvent.MOUSE_DRAGGED) {
@@ -66,6 +67,7 @@ public class PathDrawer extends Application {
                 lastPositionX = mousePressedX;
                 lastPositionY = mousePressedY;
             } else if (eventType == MouseEvent.MOUSE_RELEASED) {
+                System.out.println("go here");
                 // Remove the circles showing the path from the root.
                 root.getChildren().removeAll(pathLines);
             }

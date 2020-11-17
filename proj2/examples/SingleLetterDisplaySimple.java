@@ -9,7 +9,6 @@ import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
-
 /**
  * A JavaFX application that displays the letter the user has typed most recently in the center of
  * the window. Pressing the up and down arrows causes the font size to increase and decrease,
@@ -75,10 +74,12 @@ public class SingleLetterDisplaySimple extends Application {
                 if (code == KeyCode.UP) {
                     fontSize += 5;
                     displayText.setFont(Font.font(fontName, fontSize));
+                    keyEvent.consume();
                     centerText();
                 } else if (code == KeyCode.DOWN) {
                     fontSize = Math.max(0, fontSize - 5);
                     displayText.setFont(Font.font(fontName, fontSize));
+                    keyEvent.consume();
                     centerText();
                 }
             }

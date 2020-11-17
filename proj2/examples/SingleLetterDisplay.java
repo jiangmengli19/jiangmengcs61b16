@@ -120,7 +120,10 @@ public class SingleLetterDisplay extends Application {
             System.out.println("Bounding box: " + textBoundingBox);
 
             // Make sure the text appears in front of the rectangle.
+
             displayText.toFront();
+
+
         }
     }
 
